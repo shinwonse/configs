@@ -33,7 +33,7 @@ jobs:
           version: 9
           run_install: false
       - name: Install Dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
       - name: Build
         run: pnpm build
       - name: 릴리즈 Pull Request를 만들거나 패키지를 배포해요
