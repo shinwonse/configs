@@ -26,6 +26,12 @@ jobs:
           key: nodeModules-${{ hashFiles('**/pnpm-lock') }}
           restore-keys: |
             nodeModules-
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        id: pnpm-install
+        with:
+          version: 9
+          run_install: false
       - name: Install Dependencies
         run: pnpm install --immutable
       - name: Build
