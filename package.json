@@ -10,7 +10,7 @@
   "scripts": {
     "build": "ultra -r build",
     "release": "pnpm changeset publish",
-    "version": "changeset version && pnpm install --no-immutable"
+    "version": "changeset version && pnpm install"
   },
   "ultra": {
     "concurrent": [
