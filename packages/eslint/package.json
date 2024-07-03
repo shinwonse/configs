@@ -1,0 +1,66 @@
+{
+  "name": "@wonse/eslint-config",
+  "version": "1.0.0",
+  "description": "wonse eslint custom config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinwonse/configs",
+    "directory": "packages/eslint"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "author": {
+    "name": "wonse",
+    "email": "sinwonse@gmail.com"
+  },
+  "exports": {
+    ".": {
+      "source": "./lib/index.js",
+      "import": "./lib/index.cjs",
+      "require": "./lib/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./lib/index.js",
+  "files": [
+    "index.js",
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "build": "nanobundle build --root-dir=./",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-simple-import-sort": "^12.1.0",
+    "eslint-plugin-sort-destructure-keys": "^2.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^3.2.0",
+    "prettier": "^3.3.2"
+  },
+  "devDependencies": {
+    "nanobundle": "^2.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "react": "^18.0.0",
+    "typescript": "^4.5.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
