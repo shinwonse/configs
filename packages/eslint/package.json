@@ -1,7 +1,7 @@
 {
-  "name": "@wonse/eslint-config",
-  "version": "1.0.1",
-  "description": "wonse eslint custom config",
+  "name": "@wonse/eslint-plugin",
+  "version": "1.0.0",
+  "description": "wonse eslint custom plugin and config",
   "repository": {
     "type": "git",
     "url": "https://github.com/shinwonse/configs",
