@@ -39,7 +39,7 @@ var require_base = __commonJS({
         "prettier/prettier": [
           "error",
           {
-            usePrettierrc: false
+            usePrettierrc: true
           }
         ],
         "simple-import-sort/imports": "error",
