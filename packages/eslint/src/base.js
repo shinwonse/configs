@@ -5,7 +5,16 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        usePrettierrc: true,
+        singleQuote: true,
+        semi: true,
+        tabWidth: 2,
+        useTabs: false,
+        trailingComma: "all",
+        printWidth: 100,
+        arrowParens: "always",
+      },
+      {
+        usePrettierrc: false,
       },
     ],
     "simple-import-sort/imports": "error",
