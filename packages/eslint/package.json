@@ -1,6 +1,6 @@
 {
   "name": "@wonse/eslint-plugin",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "wonse eslint custom plugin and config",
   "repository": {
     "type": "git",
@@ -8,7 +8,6 @@
     "directory": "packages/eslint"
   },
   "license": "MIT",
-  "type": "commonjs",
   "author": {
     "name": "Wonse Shin",
     "email": "sinwonse@gmail.com"
